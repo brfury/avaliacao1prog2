@@ -18,5 +18,9 @@ void checkData(Data data, String fileName) {
   }
   print('data:');
   print(data.data);
-  print('');
+  print('''
+\n Bruno Da Silva Sousa\n
+  Nicson Costa Antunes\n
+  Pedro Lucas de Souza Rodrigues
+  ''');
 }
