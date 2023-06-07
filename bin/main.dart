@@ -5,6 +5,12 @@ void main() {
   checkData(CsvData(), 'files/sample.csv');
   checkData(TsvData(), 'files/sample.tsv');
   checkData(XmlData(), 'files/sample.xml');
+  print('''      Integrantes\n
+  Bruno Da Silva Sousa
+  Nicson Costa Antunes
+  Pedro Lucas de Souza Rodrigues
+  
+  ''');
 }
 
 void checkData(Data data, String fileName) {
@@ -18,10 +24,5 @@ void checkData(Data data, String fileName) {
   }
   print('data:');
   print(data.data);
- print('''      Integrantes\n
-  Bruno Da Silva Sousa
-  Nicson Costa Antunes
-  Pedro Lucas de Souza Rodrigues
-  
-  ''');
+  print('');
 }
