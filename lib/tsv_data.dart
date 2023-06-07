@@ -9,9 +9,6 @@ class TsvData extends DelimitedData {
 
   @override
   void load(tsvfile) {
-    //if (!tsvfile.contains('.tsv')) throw FormatException("Invalid Format");
-    //tsvfile = File(tsvfile).readAsStringSync();
-    //data = tsvfile;
     try {
       tsvfile = File(tsvfile).readAsStringSync();
       data = tsvfile;
@@ -23,7 +20,6 @@ class TsvData extends DelimitedData {
   @override
   set data(String data) {
     final values = data.split('\n');
-    //print(values);
     for (var value in values) {
       listofvalues.add(value.split('\t'));
     }
